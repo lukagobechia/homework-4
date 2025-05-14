@@ -1,5 +1,5 @@
-function getData(url) {
-  return fetch(`${url}`).then((res) => {
+async function getData(url) {
+  return await fetch(`${url}`).then((res) => {
     return res.json();
   });
 }
