@@ -21,6 +21,6 @@ async function getData(url, timeout) {
   }
 }
 
-getData("https://jsonplaceholder.typicode.com/posts/1", 5000) // in his case api works and there is no request time out
+getData("https://jsonplaceholder.typicode.com/posts/1", 1)
   .then((data) => console.log(data))
   .catch((error) => console.error(error));
